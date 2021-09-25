@@ -1,0 +1,45 @@
+.btn:link,
+.btn:visited {
+    text-transform: uppercase;
+     text-decoration: none;
+    padding: 2rem 4rem;
+    display: inline-block;
+    border-radius:.2rem;
+    transition: all .2s;
+    position: relative;
+    color: #fff;
+    font-weight: 500;
+}
+.btn:hover{
+    transform: translateY(-3px);
+    box-shadow: 0 1rem 2rem rgba(37, 50, 168, 0.445);
+}
+.btn:active{
+    transform: translateY(-.1rem);
+    box-shadow: 0 5px 10px rgba(32, 48, 185, 0.493);
+}
+.btn-white{
+    background:linear-gradient(rgb(26, 82, 185) 30% , rgb(169, 80, 221));
+    color: rgb(0, 0, 0);
+  
+}
+.btn::after{
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: .2rem;
+    position: absolute;
+    top:0;
+    left: 0;
+    z-index: -1;
+    transition: all .4s;
+}
+.btn-white::after{
+    background:linear-gradient(rgb(26, 82, 185) 30% , rgb(169, 80, 221));
+}
+.btn:hover::after{
+    transform: scale(1.5);
+    opacity: 0;
+}
+

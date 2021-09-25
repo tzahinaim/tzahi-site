@@ -1,0 +1,289 @@
+
+@import "abstracts/variables";
+
+@import "base/animations"; 
+@import "base/base"; 
+
+
+@import "abstracts/components/button";
+
+
+
+*,
+*::after,
+::before{
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+html {
+  font-size: 62.5%; }
+
+body{
+    font-family: 'Secular One', sans-serif;
+     background: rgb(255, 255, 255); 
+    color: rgb(10, 10, 10);
+    font-weight:300;
+    font-size: 1.5rem;
+    line-height: 1.5;
+    letter-spacing: 1.7px;
+    padding: 10px ;
+    border-radius: 2rem;
+}
+ .header-top-OUT{         
+     position: relative;
+    background:linear-gradient(-16deg, $color-grey-OUT-tow 46% ,$color-grey-OUT-one 46.6% 100%);  
+    padding:20rem 10rem 0 10rem;
+     border-radius: 3rem 3rem 0 0;   
+}
+
+ .header-top-IN{                    
+    position: relative; 
+     height: 35rem;       //$color-grey-OUT-tow
+
+     color:rgb(8, 8, 8); 
+    background:linear-gradient(-18deg, $color-white  52.7% ,$color-grey-OUT-tow 52.2% 100%);   
+} 
+.header-bottom-cover{
+    background:linear-gradient(-6.7deg, $color-grey-OUT-one 47%, $color-grey-OUT-tow 47.6% 100% ); 
+    padding: 0 10rem 0 10rem;
+}
+  .header-bottom{
+    height: 25rem;
+    background:linear-gradient(-8deg, $color-balck-triangle-IN 52%, $color-white 52.5% 100%); 
+} 
+.main-top-cover{
+    background:linear-gradient(5.5deg, $color-grey-OUT-tow 47% ,$color-grey-triangle-OUT 47.6% 100%); 
+    padding: 0 10rem 0 10rem ;
+}
+ .main-top{
+    background:linear-gradient(4.5deg,$color-white 55% ,$color-balck-triangle-IN 55.6% 100% ); 
+    height: 20rem;
+     color:rgb(8, 8, 8);         
+ }  
+.main-cover{
+    padding: 0 10rem 0 10rem ;
+    background:linear-gradient(15.5deg,$color-grey-OUT-tow 60% , $color-grey-OUT-tow 60.6% 100%); 
+}
+ .main{
+    height: 50rem;
+    background:linear-gradient(15.5deg,$color-light-grey-main 37% , $color-white 37.6% 100%); 
+  
+} 
+
+ .text-Box {
+     position: absolute; 
+     line-height: 7.7rem;
+    top:5%;
+    left:30%;    
+    
+
+} 
+.heading-primary{
+color: $color-balck;
+text-transform: uppercase;
+
+backface-visibility: hidden;
+}
+.heading-primary-main{
+ display: block;
+ font-size: 6rem;
+ font-weight: 700;
+ letter-spacing: 2rem;
+ width: 100%;
+ text-align:center ;
+
+ animation-name: moveInLeft;
+ animation-duration:1s;
+ animation-timing-function: ease-out;
+
+}
+.heading-primary-underline-box{
+    position: absolute;
+    text-decoration: underline;
+    background:linear-gradient(80deg, rgb(169, 80, 221) ,rgb(26, 82, 185) , rgb(100, 253, 100));
+    content: "";
+    width: 9.4%;
+    height: .45rem;
+    top:17%;
+    left:43%;
+    border-radius:.5rem;
+
+    animation-name:moveInRight;
+    animation-duration: 2s;
+    animation-delay: .2s ;
+    animation-fill-mode: backwards;
+}
+
+.heading-primary-sub{
+    display: block;
+    font-size: 2rem;
+ font-weight: 700;
+ letter-spacing: 5px;
+ width: 100%;
+ margin-right: 5.7rem;
+
+ animation: moveInRight 1s ease-out;
+}
+
+.text-box-secondary{
+    position: absolute; 
+    top:45%;
+   left:62%;  
+}
+.heading-secondary{
+  color: black;
+  text-transform: uppercase;
+  backface-visibility: hidden;
+}
+
+.heading-secondary-main{
+    display: block;
+    font-size: 4.5rem;
+    font-weight: 500;
+    letter-spacing: 1rem;
+    width: 100%;
+    text-align: center;
+    line-height: 6rem;
+    padding-bottom:2rem ;
+
+    animation: moveInRight 1s ease-out;  
+}
+.heading-secondary-sub-one{
+    display: block;
+
+    animation-name: moveInLeft;
+    animation-duration:1s;
+    animation-timing-function: ease-out;
+}
+.heading-secondary-sub-tow{
+    display: block;
+
+    animation-name: moveInLeft;
+    animation-duration:1s;
+    animation-timing-function: ease-out;
+}
+
+.heading-secondary-underline{
+    position: absolute;
+    text-decoration: underline;
+    background:linear-gradient(80deg, rgb(169, 80, 221) ,rgb(26, 82, 185) , rgb(100, 253, 100));
+    content: "";
+    width: 7.6%;
+    height: .35rem;
+    top:57.5%;
+    left:63.5%;
+    border-radius: .5rem;
+
+    animation-name:moveInLeft;
+    animation-duration: 2s;
+    animation-delay: .2s ;
+    animation-fill-mode: backwards;
+}
+
+
+.logoSecond-subtitleBox{
+    position: absolute;
+    font-weight:50;
+    line-height: 3rem;
+    letter-spacing: .15rem;
+    font-size: 1.8rem; 
+    color: rgb(218, 218, 218);
+    top:58.5%;
+    left:54.5%;
+}
+.profileBox{
+    position: absolute;
+    top: 25%;
+    right: 50%;
+    transform: rotate( 1.9deg);
+    clip-path: polygon(0 0, 100% 0, 100% 81%, 0 100%);
+}
+.profile{    
+  height: 45rem;
+  filter:drop-shadow(.75rem .75rem .7rem rgb(46, 46, 46));
+
+} 
+ .headeText-box{
+    position: absolute;
+    top:140%;
+    right:5%;
+}
+.headeText{
+    font-size: 2.2rem;
+    letter-spacing: 1.5px;
+    color: rgb(255, 255, 255);
+}
+
+.botton-box{
+    position: absolute;
+    top:157%;
+    left:20%;
+    color: rgb(255, 255, 255);
+} 
+
+
+
+
+#product-overview {
+    width: 100%;
+    padding: 1rem;   
+}
+.section-title {
+    color: #1b1b1b;
+    text-align: center;
+}
+#product-overview h1 {
+    color: rgb(22, 22, 22);
+}
+.plan {
+    background: #858484;
+    text-align: center;
+    padding: 1.8rem;
+    margin: .8rem;
+    display: inline-block;
+    width: 30%;
+    vertical-align: middle;
+}
+
+.plan--highlighted {
+    background: #a5a5a5;
+    color: rgb(17, 17, 17);
+    box-shadow: .2rem .2rem .2rem .2rem rgba(0, 0, 0, 0.5);
+}
+
+.plan__annotation {
+    background: rgb(20, 20, 20);
+    color: #bec0bf;
+    padding: .8rem;
+    box-shadow: .2rem .2rem .2rem .2rem rgba(0, 0, 0, 0.5);
+    border-radius: .8rem;
+}
+
+.plan__title {
+    color: #0c0c0c;
+}
+
+.plan__price {
+    color: #858585;
+}
+
+.plan--highlighted .plan__title {
+    color: white;
+}
+
+.plan--highlighted .plan__price {
+    color: #000000;
+}
+
+.plan__features {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.plan__feature {
+    margin: 1rem 0;
+}
+
+
